@@ -89,12 +89,14 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
   margin-top: 20px;
+  width: 30%;
 }
 
 .search-bar input {
   padding: 10px;
-  width: 300px;
+  width: 100%;
   border: 1px solid #ccc;
   border-radius: 5px 0 0 5px;
 }
@@ -222,9 +224,16 @@ button:hover {
 
 @media (max-width: 768px) {
   .cards {
-    width: calc(100% - 40px); /* Full width cards on smaller screens */
-    margin-left: auto; /* Center align cards */
-    margin-right: auto; /* Center align cards */
+    width: calc(100% - 60px); /* Full width cards on smaller screens */
+  }
+  .product-card {
+    display: grid;
+    padding: 0 3rem;
+    grid-template-columns: 280px 280px;
+    grid-template-rows: 400px;
+  }
+  .search-bar {
+    width: 60%;
   }
 }
 
@@ -560,7 +569,15 @@ button:hover {
     width: 100%;
     position: relative;
   }
-
+  .product-card {
+    display: flex;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+  .cards {
+    width: 100%;
+    margin: 0 auto;
+  }
   .logoImg {
     margin-bottom: 10px; /* Add space below logo */
     width: 40px;
@@ -574,5 +591,20 @@ button:hover {
 
   .navLink li {
     margin: 10px 0; /* Add spacing above and below links */
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .cards img {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .search-bar {
+    width: 80%;
+  }
+  .logoImg {
+    display: none;
   }
 }
