@@ -607,4 +607,12 @@ button:hover {
   .logoImg {
     display: none;
   }
+  .shimmerdiv {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
 }
