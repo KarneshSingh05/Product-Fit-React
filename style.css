@@ -1,0 +1,471 @@
+/* ------------style.css-------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+a {
+  list-style: none;
+  text-decoration: none;
+}
+.suggemail {
+  color: black;
+}
+
+#navBar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: whitesmoke;
+  color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+#navBar a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+/* Logo Styling */
+.logoImg {
+  width: 15%;
+}
+.logo {
+  width: 60%;
+  border-radius: 150px;
+}
+/* Navigation Links */
+.navLink ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navLink ul a {
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: color 0.3s;
+}
+
+.navLink ul a:hover {
+  color: #ffcc00;
+}
+
+.navLink ul li {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+/* Button Styling */
+button {
+  background-color: #ffcc00;
+  border: none;
+  padding: 10px 15px;
+  margin-left: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #e6b800;
+}
+
+/* Search Bar Styles */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #0056b3;
+}
+
+/* All Products Buttons Styles */
+.all-products {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.all-products button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.all-products button:hover {
+  background-color: #0056b3;
+}
+
+/* Product Card Styles */
+.product-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.cards {
+  margin: 20px;
+  width: 250px;
+  height: 92%;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.cards:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-color: #bbb;
+}
+
+.stock {
+  padding: 1rem 0 0 1rem;
+}
+
+.product-img {
+  width: 100%;
+  height: 150px;
+  /* object-fit: cover; */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.cards h2,
+.cards h3,
+.cards h4 {
+  padding: 10px;
+}
+
+.cards h4 {
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+}
+
+.cards h2 {
+  text-align: center;
+  font-size: 18px;
+}
+
+.cards h3 {
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+}
+.stock {
+  color: black;
+}
+/* contact-us--------------style */
+.product-card a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cards h2 {
+  color: black;
+}
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  margin-top: 5rem;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.submitbutton {
+  width: 93%;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  background-color: #e6b800;
+  color: white;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+.feedback {
+  padding: 2rem 0 0 6rem;
+}
+/* about---------------style */
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+}
+
+.about-container h1 {
+  text-align: center;
+  color: #333;
+}
+
+.about-container h2 {
+  margin-top: 20px;
+  color: #555;
+}
+
+.about-container p {
+  margin: 10px 0;
+  color: #666;
+}
+
+.about-container ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.about-container li {
+  margin-bottom: 5px;
+}
+/* shimmer--------style */
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(200, 200, 200, 0.3) 25%,
+    rgba(255, 255, 255, 0.6) 50%,
+    rgba(200, 200, 200, 0.3) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer-animation 1.5s infinite;
+  border-radius: 8px;
+}
+.shimmerdiv {
+  display: flex;
+  margin: 7rem 0 0 0;
+  justify-content: center;
+}
+.shimmer-card {
+  width: 300px;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.shimmer-img {
+  width: 100%;
+  height: 200px;
+}
+
+.shimmer-title {
+  width: 80%;
+  height: 40px;
+}
+
+.shimmer-price,
+.shimmer-rating {
+  width: 60%;
+  height: 30px;
+}
+
+@keyframes shimmer-animation {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+/* Footer css */
+.footer {
+  background-color: #2c3e50;
+  color: white;
+  padding: 40px 20px;
+  margin-top: 3rem;
+}
+
+.footer-top {
+  display: flex; /* Flexbox for layout */
+  justify-content: space-between; /* Space between sections */
+  flex-wrap: wrap; /* Wrap on smaller screens */
+}
+
+.footer-section {
+  flex: 1; /* Equal width for each section */
+  margin: 10px; /* Margin around sections */
+  min-width: 250px; /* Minimum width */
+}
+
+.footer-section h3 {
+  font-size: 1.5em; /* Heading size */
+  margin-bottom: 15px; /* Space below heading */
+}
+
+.footer-section ul li {
+  color: white;
+}
+
+.footer-section p {
+  line-height: 1.6; /* Line height for readability */
+}
+
+.social-links {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+}
+
+.social-links li {
+  display: inline; /* Inline list items for horizontal layout */
+  margin-right: 10px; /* Space between icons */
+}
+
+.social-links a {
+  color: white; /* Icon color */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.social-links a:hover {
+  color: #3498db; /* Change color on hover */
+}
+
+.footer-bottom {
+  text-align: center; /* Center text in bottom section */
+  margin-top: 20px; /* Space above bottom section */
+}
+
+.footer-bottom p {
+  margin: 0; /* Remove default margin */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column; /* Stack sections on small screens */
+    align-items: center; /* Center align sections */
+    text-align: center; /* Center text in sections */
+  }
+}
+/* on click products */
+
+.clickcards {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+
+  margin: 20px 0 0 25rem;
+  background-color: #f9f9f9;
+  box-shadow: 3px 4px 8px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  height: auto;
+  width: 50%;
+}
+
+.clickcards:hover {
+  transform: translateY(-5px);
+}
+.detail {
+  display: flex;
+}
+.dtailinfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+}
+.cartbutton {
+  margin: 1rem 0.5rem 0 0;
+}
+
+.clickcards h1 {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+}
+
+.clickcards h2 {
+  font-size: 20px;
+  color: #007bff;
+  margin-top: 10px;
+}
+
+/* Styling for the product image */
+.prodimg {
+  width: 100%; /* Full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 4px; /* Slightly rounded corners for images */
+}
+
+/* Styling for the description paragraph */
+.clickcards p {
+  font-size: 16px; /* Description size */
+  color: #555; /* Grey color for text */
+  margin: 15px 0; /* Spacing above and below the description */
+}
+
+/* Styling for price display */
+.clickcards h3 {
+  font-size: 18px; /* Price size */
+  color: #28a745; /* Green color for price indication */
+}
+
+/* Styling for rating display */
+.clickcards h4 {
+  font-size: 16px; /* Rating size */
+  color: #ffd700; /* Gold color for stars */
+}
